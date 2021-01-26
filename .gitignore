@@ -2,4 +2,6 @@
 *.vcxproj
 *.filters
 *.user
-/Debug
+*/Debug
+FirstApp/0
+*/Release
