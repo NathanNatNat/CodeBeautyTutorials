@@ -93,8 +93,8 @@ int main()
 	cout << d + (e++) << endl; //?  5 + e++(post increment) = 9. incremented value not shown due to it happening after the output.
 	cout << (--d) + e << endl; //?  d incremented by 1 above = 6, now pre-decremented by 1 = 5, d(5) + e(4) = 9.
 
-	cout << !(true && false) << endl; //? true. (true && false) will always be false as it cant be both, !NOT will reverse the result.
-	cout << (true && false || true) << endl; //? true.
+	cout << !(true && false) << endl; //? true. (true && false) will always be false as it cant be both, !(NOT) will reverse the result.
+	cout << (true && false || true) << endl; //? true. true && false is false, so its false ||(OR) true = true.
 
 	int w = 7;
 	cout << (++w <= 9 && w + 2 >= 10) << endl; //? true.  7 + 1 = 8, less than or equal to 9 = true AND 8 + 2 = 10 greater than or equal to 10 = true.
