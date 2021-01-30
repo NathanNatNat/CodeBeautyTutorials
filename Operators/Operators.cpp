@@ -85,5 +85,28 @@ int main()
 	x += 7; // X = X + 7 (X = 5 + 7) = 12.
 	cout << x << endl;
 
+
+	cout << "\n\nOptional Test:\n";
+	//Optional test.
+	//What is going to be the result of the following lines?
+	int d = 5, e = 4;
+	cout << d + (e++) << endl; //?  5 + e++(post increment) = 9. incremented value not shown due to it happening after the output.
+	cout << (--d) + e << endl; //?  d incremented by 1 above = 6, now pre-decremented by 1 = 5, d(5) + e(4) = 9.
+
+	cout << !(true && false) << endl; //? true. (true && false) will always be false as it cant be both, !NOT will reverse the result.
+	cout << (true && false || true) << endl; //? true.
+
+	int w = 7;
+	cout << (++w <= 9 && w + 2 >= 10) << endl; //? true.  7 + 1 = 8, less than or equal to 9 = true AND 8 + 2 = 10 greater than or equal to 10 = true.
+
+	int y = 3;
+	cout << (y == y++) << endl; //? true. 3 equal to 3 = true, post-increment not taken in to account to do it happening after the output.
+
+	float z = 8;
+	z += 2;
+	cout << z << endl; //? 10. 8+2 = 10.
+	z /= 2;
+	cout << z << endl; //? 5. 8+2 added above = 10, 10 divided by 2 = 5.
+
 	system("pause>0");
 }
